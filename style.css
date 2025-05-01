@@ -1,0 +1,135 @@
+* {
+  font-family: "Sofia", cursive; /* Wendet die Sofia-Schrift auf alle Elemente an */
+  box-sizing: border-box; /* Padding und Border werden in der Breite/Höhe mit einbezogen */
+}
+
+html,
+body {
+  background-color: #f2f1f3; /* Hellgrauer Hintergrund */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Zentriert den Inhalt */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Füllt mindestens die gesamte Bildschirmhöhe */
+}
+
+.container {
+  max-width: 90%; /* Begrenzte Breite für besseren Look */
+  text-align: center; /* Zentrierter Text */
+}
+
+h1 {
+  font-size: 2.5rem; /* Große Überschrift */
+}
+
+/* Bild responsiv machen */
+img {
+  width: 80%; /* Nimmt 80% der Containerbreite */
+  max-width: 350px; /* Maximalbreite von 350px */
+  display: block;
+  margin: 0 auto; /* Zentriert das Bild horizontal */
+}
+
+.buttons {
+  display: flex; /* Button-Gruppe nebeneinander */
+  justify-content: center;
+  gap: 15px; /* Abstand zwischen Buttons */
+  margin-top: 20px;
+}
+
+button {
+  padding: 0.8em 1.5em;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #e47c7c; /* Standard-Buttonfarbe */
+  color: #fff;
+  border: none;
+  border-radius: 12px; /* Abgerundete Ecken */
+  cursor: pointer;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out; /* Weicher Hover-Effekt */
+}
+
+button:hover {
+  background-color: #c55b5b;
+  transform: scale(1.05); /* Leichtes Vergrößern beim Hover */
+}
+
+.yes {
+  background: #6c8c58; /* Grüne Farbe für "Yes"-Button */
+}
+.yes:hover {
+  background: #567146; /* Dunklere Version beim Hover */
+}
+
+.no {
+  background: #d9534f; /* Rote Farbe für "No"-Button */
+}
+.no:hover {
+  background: #c9302c; /* Dunklere Version beim Hover */
+}
+
+/* ❤️ Herzen Animation */
+.heart {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  animation: float 4s infinite ease-in-out; /* Endlose Floating-Animation */
+}
+
+.heart--1 {
+  top: 50%;
+  left: 20%;
+  animation-delay: 0.5s;
+}
+
+.heart--2 {
+  top: 20%;
+  left: 70%;
+  animation-delay: 1s;
+}
+
+.heart--3 {
+  top: 65%;
+  left: 80%;
+  animation-delay: 1.5s;
+}
+
+.heart--4 {
+  top: 10%;
+  left: 10%;
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px); /* Schwebt leicht nach oben */
+  }
+  100% {
+    transform: translateY(0px); /* Kommt wieder zurück */
+  }
+}
+
+/* 📱 Mobile Optimierung */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem; /* Kleinere Überschrift auf Mobilgeräten */
+  }
+
+  img {
+    max-width: 250px; /* Kleinere Bilder auf kleinen Displays */
+  }
+
+  .buttons {
+    flex-direction: column; /* Buttons untereinander statt nebeneinander */
+  }
+
+  button {
+    width: 100%; /* Buttons füllen die Breite */
+    font-size: 1em;
+  }
+}
