@@ -4,6 +4,10 @@
 
 Diese Anwendung bringt ein Lächeln auf jedes Gesicht: Wer auf „Nein“ klickt, wird schnell merken – der „Ja“-Button wächst mit jedem Versuch. Eine süße, digitale Art „Ich hab dich lieb“ zu sagen – mit einem Augenzwinkern.
 
+## Screenshot
+![beMyValentine.png](https://github.com/MsCodingLabs/quizze/blob/main/quizze.png)
+
+
 ## ✨ Features
 
 - 💌 Interaktive Frage „Will you be mine?“
